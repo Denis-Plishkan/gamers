@@ -1,7 +1,13 @@
 import Routers from "./router/router";
+import SvgManager from "./components/Base/SvgManager";
 
 const App = () => {
-  return <Routers />;
+  return (
+    <>
+      <Routers />
+      <SvgManager />
+    </>
+  );
 };
 
 export default App;
