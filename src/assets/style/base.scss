@@ -1,0 +1,32 @@
+@use "reset";
+@use "media";
+
+body {
+  font-family: "Pragmatica", sans-serif;
+  font-weight: bold;
+}
+
+[class$="__container"] {
+  max-width: 1390px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.main {
+  flex: 1 1 auto;
+
+  margin-top: 117px;
+}
+
+#app {
+  height: 100%;
+}
