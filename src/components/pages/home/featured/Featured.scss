@@ -1,0 +1,34 @@
+@import '../../../../assets/style/variable.scss';
+@import '../../../../assets/style/media.scss';
+
+.featured {
+  margin-top: 52px;
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    color: $dark-blue;
+    margin-bottom: 82px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 28px;
+    }
+  }
+
+  &__card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @include media-breakpoint-down(my2) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include media-breakpoint-down(xxs) {
+      gap: 30px;
+    }
+  }
+}

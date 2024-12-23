@@ -1,0 +1,47 @@
+@import '../../../assets/style/variable.scss';
+@import '../../../assets/style/fonts/stylesheet.scss';
+@import '../../../assets/style/media.scss';
+
+.card {
+  width: 319px;
+  height: 319px;
+  background: $rose-light;
+  border-radius: 43px;
+  box-shadow: 10px 23px 65px 0 rgba(196, 196, 196, 0.34);
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  @include media-breakpoint-down(xxs) {
+    width: 290px;
+    height: 290px;
+  }
+
+  &:hover {
+    background: $rose-50;
+    box-shadow: 10px 23px 75px rgba(196, 196, 196, 0.5);
+  }
+
+  &__group {
+    font-family: "JosefinSans-Medium", sans-serif;;
+    font-weight: 500;
+    font-size: 36px;
+    color: $dark-black;
+    margin-top: auto;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -62%);
+  }
+}
